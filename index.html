@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Rock Paper Scissors</h1>
+        <div class="game-section">
+            <div class="choices">
+                <button id="rock" class="choice-btn">Rock</button>
+                <button id="paper" class="choice-btn">Paper</button>
+                <button id="scissors" class="choice-btn">Scissors</button>
+            </div>
+            
+            <div class="result-section">
+                <div id="result" class="result"></div>
+                <div id="score" class="score">Player: 0 | Computer: 0</div>
+            </div>
+            
+            <div class="controls">
+                <button id="historyBtn" class="btn">View History</button>
+                <button id="resetBtn" class="btn reset-btn">Reset Game</button>
+                <button id="clearHistoryBtn">Clear History</button>
+
+            </div>
+        </div>
+        
+        <div id="historyModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Game History</h2>
+                <div id="historyList"></div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
